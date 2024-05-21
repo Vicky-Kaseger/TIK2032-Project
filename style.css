@@ -100,6 +100,47 @@ body{
     font-weight: 100;
     line-height: 25px;
 }
+#ch, #ch2, #ch3{
+    display: none;
+}
+
+.insideco {
+    display: none;
+}
+#ch:checked ~ .insideco {
+    display: inline-block;
+}
+
+#ch:checked ~ label {
+    display: none;
+}
+
+#ch2:checked ~ .insideco {
+    display: inline-block;
+}
+
+#ch2:checked ~ label {
+    display: none;
+}
+
+#ch3:checked ~ .insideco {
+    display: inline-block;
+}
+
+#ch3:checked ~ label {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(72, 113, 97);
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-top: 12px;
+}
+
 .pics{
     top: 500px;
     display: flex;
